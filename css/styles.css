@@ -5,7 +5,29 @@ body {
     font-size: 22px;
     background-color: #fbfbfb;
 }
-#header,#main,#footer {
+#header,#main,#footer,#post {
     width: 900px;
     margin: 0 auto;
+}
+#header>a:link {
+    font-size: 3em;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+#header>a:visited {
+    color: #000;
+}
+#header>p {
+    font-style: italic;
+    padding: 5px 9px;
+}
+#header {
+    border-bottom: 1px solid #eee;
+}
+#footer {
+    text-align: center;
+}
+#main>h3 {
+    
 }
