@@ -3,7 +3,7 @@ layout: default
 title: hello world
 ---
 
-#{{page.title}}#
+##{{page.title}}
 
 我的第一篇文章
 
