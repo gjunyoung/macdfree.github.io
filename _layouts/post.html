@@ -5,12 +5,12 @@ layout: default
 <div id="post">
     <h2>{{page.title}}</h2>
     <ul>
-        <li>时间：{{page.date | date: "%Y-%m-%d"}}</li>
-        <li>分类：{{page.category}}</li>
-        <li>标签：{{ page.tags | array_to_sentence_string }}</li>
-        <li>字数：{{ page.content | number_of_words }}</li>
+        <li>鏃堕棿锛歿{page.date | date: "%Y-%m-%d"}}</li>
+        <li>鍒嗙被锛歿{page.category}}</li>
+        <li>鏍囩锛歿{ page.tags | array_to_sentence_string }}</li>
+        <li>瀛楁暟锛歿{ page.content | number_of_words }}</li>
     </ul>
     <div id="content">
-        {{content}}
+        {{ content }}
     </div>
 </div>
