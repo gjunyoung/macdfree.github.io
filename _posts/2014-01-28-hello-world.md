@@ -1,7 +1,7 @@
 ---
 layout: post
 title: hello world
-category: 测试
+category: test
 tags: one two three
 ---
 
