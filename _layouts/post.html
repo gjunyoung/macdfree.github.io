@@ -8,7 +8,7 @@ layout: default
         <li>时间：{{page.date | date: "%Y-%m-%d"}}</li>
         <li>分类：{{page.category}}</li>
         <li>标签：{{ page.tags | array_to_sentence_string }}</li>
-        <li>字数：{{ page.content }}</li>
+        <li>字数：{{ page.content | number_of_words }}</li>
     </ul>
     <div id="content">
         {{ content }}
