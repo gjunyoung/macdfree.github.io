@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div id="post">
     <h2>{{page.title}}</h2>
     <ul>
@@ -9,7 +10,7 @@ layout: default
         <li>±êÇ©£º{{ page.tags | array_to_sentence_string }}</li>
         <li>×ÖÊı£º{{ page.content | number_of_words }}</li>
     </ul>
-    <div>
+    <div id="content">
         {{content}}
     </div>
 </div>
