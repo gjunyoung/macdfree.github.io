@@ -1,1 +1,2 @@
 baseurl: /tryBlog
+permalink: /:year-:month-:day/:title.html
