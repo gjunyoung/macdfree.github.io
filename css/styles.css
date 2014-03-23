@@ -31,13 +31,19 @@ a:hover {
     text-align: center;
     padding: 15px 0;
 }
-#main>h3 {
+#main>h3,#post>h3 {
     margin: 15px 0;
 }
 #post-list>li {
     margin: 10px 0;
 }
-#main {
+#main,#post {
     border-bottom: 1px solid #EEE;
     padding-bottom: 15px;
+}
+#post-meta {
+    list-style-type: none;
+}
+#post-meta li {
+    float: left;
 }
