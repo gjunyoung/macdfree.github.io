@@ -1,6 +1,8 @@
 ---
 layout: default
 title: hello world
+category: 测试
+tags: one two three
 ---
 
 ##{{page.title}}

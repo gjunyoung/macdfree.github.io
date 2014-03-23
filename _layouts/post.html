@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div id="post">
+    <h2>{{page.title}}</h2>
+    <ul>
+        <li>时间：{{page.date | date: "%Y-%m-%d"}}</li>
+        <li>分类：{{page.category}}</li>
+        <li>标签：{{ page.tags | array_to_sentence_string }}</li>
+        <li>字数：{{ page.content | number_of_words }}</li>
+    </ul>
+    <div>
+        {{content}}
+    </div>
+</div>
