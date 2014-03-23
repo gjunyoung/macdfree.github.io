@@ -5,6 +5,13 @@ body {
     font-size: 22px;
     background-color: #fbfbfb;
 }
+a:link,a:visited {
+    color: #000;
+    text-decoration: none;
+}
+a:hover {
+    color: #aaa;
+}
 #header,#main,#footer,#post {
     width: 900px;
     margin: 0 auto;
@@ -15,9 +22,6 @@ body {
     color: #000;
     text-decoration: none;
 }
-#header>a:visited {
-    color: #000;
-}
 #header>p {
     font-style: italic;
     padding: 5px 9px;
@@ -27,7 +31,15 @@ body {
 }
 #footer {
     text-align: center;
+    margin: 15px 0;
 }
 #main>h3 {
-    
+    margin: 15px 0;
+}
+#post-list>li {
+    margin: 10px 0;
+}
+#main {
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 15px;
 }
