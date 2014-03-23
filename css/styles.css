@@ -47,3 +47,8 @@ a:hover {
 #post-meta li {
     float: left;
 }
+#post-meta:after {
+    content: '';
+    display: block;
+    clear: both;
+}
