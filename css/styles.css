@@ -63,9 +63,9 @@ a:hover {
     letter-spacing: 1px;
 }
 #post-list a {
-    border-bottom: 1px dashed #eee;
+    border-bottom: 1px dashed #999;
     padding: 2px 4px;
 }
 #content a {
-    border-bottom: 1px dashed #eee;
+    border-bottom: 1px dashed #999;
 }
