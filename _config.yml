@@ -1,2 +1,2 @@
-baseurl: /tryBlog
+baseurl: /
 permalink: /:year-:month-:day/:title.html
