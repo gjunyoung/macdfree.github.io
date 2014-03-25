@@ -69,3 +69,6 @@ a:hover {
 #content a {
     border-bottom: 1px dashed #999;
 }
+p.p-hide {
+    display: none;
+}
