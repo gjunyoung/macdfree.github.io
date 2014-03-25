@@ -72,3 +72,13 @@ a:hover {
 p.p-hide {
     display: none;
 }
+#content img {
+    display: block;
+    margin: 0 auto;
+}
+#content p {
+    padding-bottom: 20px;
+}
+#content ol,#content ul {
+    margin: 12px 0 12px 30px;
+}
