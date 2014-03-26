@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div id="post">
+    <h3>{{page.title}}</h3>
+    <ul id="post-meta">
+        <li>时间：{{page.date | date: "%Y-%m-%d"}}</li>
+        <li>分类：{{page.category}}</li>
+    </ul>
+    <div id="content">
+        {{ content }}
+    </div>
+    <!--
+    <div>
+        <ul>
+        {% for post in site.categories.test %}
+            <li><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+    -->
+</div>
