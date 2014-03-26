@@ -1,2 +1,2 @@
-baseurl: 
+baseurl: http://macdfree.github.io
 permalink: /:year-:month-:day/:title.html
