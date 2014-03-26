@@ -12,7 +12,7 @@ a:link,a:visited {
 a:hover {
     color: #777;
 }
-#header,#main,#footer,#post {
+#header,#main,#footer,#post,#layout {
     width: 800px;
     margin: 0 auto;
 }
