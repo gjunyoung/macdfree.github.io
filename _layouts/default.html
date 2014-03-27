@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="TryBlog, programer, coding, git, student, C programming language, the meaning of life, science" />
-    <meta name="keywords" content="{{ page.tags | array_to_sentence_string }}" />
+    {% if page.tags %}<meta name="keywords" content="{{ page.tags | array_to_sentence_string }}" />{% endif %}
     <meta name="description" content="TryBlog is about my life and study."> 
     <meta name="author" content="macd, hyitmacd@gmail.com">
     <title>{{ page.title }}</title>
