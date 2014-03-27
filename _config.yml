@@ -2,3 +2,8 @@ baseurl: http://macdfree.github.io
 permalink: /:year-:month-:day/:title.html
 
 feed: /atom.xml
+
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
