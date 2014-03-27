@@ -7,6 +7,7 @@ layout: default
     <ul id="post-meta">
         <li>时间：{{page.date | date: "%Y-%m-%d"}}</li>
         <li>分类：{{page.category}}</li>
+        {% if page.tags %}<li>标签：{{ page.tags|array_to_sentence_string }}</li>{% endif %}
     </ul>
     <div id="content">
         {{ content }}
