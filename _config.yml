@@ -1,4 +1,4 @@
-baseurl: http://macdfree.github.io
+baseurl: http://littleattic.github.io
 permalink: /:year-:month-:day/:title.html
 
 markdown: kramdown
