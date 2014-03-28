@@ -107,6 +107,7 @@ a {
 
 a:hover {
   text-decoration: none;
+  text-shadow: 1px 1px 1px #8383FF;
 }
 
 /* LISTS
