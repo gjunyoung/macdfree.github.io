@@ -1,6 +1,8 @@
 baseurl: http://macdfree.github.io
 permalink: /:year-:month-:day/:title.html
 
+paginate: 5
+
 markdown: kramdown
 
 feed: /atom.xml
