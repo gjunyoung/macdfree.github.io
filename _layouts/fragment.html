@@ -3,31 +3,31 @@ layout: default
 ---
 
 <div>
-    <a href="{{ site.baseurl }}/language.html" {% if page.title == 'language' %}{{'class="selected"'}}{% endif %} ><h4>编程语言</h4></a>
+    <h4><a href="{{ site.baseurl }}/language.html" {% if page.title == 'language' %}{{'class="selected"'}}{% endif %} >编程语言</a></h4>
     <ul>
         {% for post in site.categories.language %}
         <li><a href="">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
-    <a href="{{ site.baseurl }}/system.html" {% if page.title == 'system' %}{{'class="selected"'}}{% endif %} ><h4>操作系统</h4></a>
+    <h4><a href="{{ site.baseurl }}/system.html" {% if page.title == 'system' %}{{'class="selected"'}}{% endif %} >操作系统</a></h4>
     <ul>
         {% for post in site.categories.system %}
         <li><a href="">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
-    <a href="{{ site.baseurl }}/hardware.html" {% if page.title == 'hardware' %}{{'class="selected"'}}{% endif %} ><h4>硬件</h4></a>
+    <h4><a href="{{ site.baseurl }}/hardware.html" {% if page.title == 'hardware' %}{{'class="selected"'}}{% endif %} >硬件</a></h4>
     <ul>
         {% for post in site.categories.hardware %}
         <li><a href="">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
-    <a href="{{ site.baseurl }}/tool.html" {% if page.title == 'tool' %}{{'class="selected"'}}{% endif %} ><h4>工具</h4></a>
+    <h4><a href="{{ site.baseurl }}/tool.html" {% if page.title == 'tool' %}{{'class="selected"'}}{% endif %} >工具</a></h4>
     <ul>
         {% for post in site.categories.tool %}
         <li><a href="">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
-    <a href="{{ site.baseurl }}/other.html" {% if page.title == 'other' %}{{'class="selected"'}}{% endif %} ><h4>其他</h4></a>
+    <h4><a href="{{ site.baseurl }}/other.html" {% if page.title == 'other' %}{{'class="selected"'}}{% endif %} >其他</a></h4>
     <ul>
         {% for post in site.categories.other %}
         <li><a href="">{{ post.title }}</a></li>
