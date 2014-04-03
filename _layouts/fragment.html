@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div>
+    
+    <a href="{{ site.baseurl }}/language.html" {% if page.category=='language' %}class="selected"{% endif %} ><h4>编程语言</h4></a>
+    <ul>
+        {% for post in site.categories.language %}
+        <li><a href=""></a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ site.baseurl }}/system.html" {% if page.category=='system' %}class="selected"{% endif %} ><h4>操作系统</h4></a>
+    <ul>
+        {% for post in site.categories.system %}
+        <li><a href=""></a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ site.baseurl }}/hardware.html" {% if page.category=='hardware' %}class="selected"{% endif %} ><h4>硬件</h4></a>
+    <ul>
+        {% for post in site.categories.hardware %}
+        <li><a href=""></a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ site.baseurl }}/tool.html" {% if page.category=='tool' %}class="selected"{% endif %} ><h4>工具</h4></a>
+    <ul>
+        {% for post in site.categories.tool %}
+        <li><a href=""></a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ site.baseurl }}/other.html" {% if page.category=='other' %}class="selected"{% endif %} ><h4>其他</h4></a>
+    <ul>
+        {% for post in site.categories.other %}
+        <li><a href=""></a></li>
+        {% endfor %}
+    </ul>
+</div>
+<div>
+    {{ content }}
+</div>
