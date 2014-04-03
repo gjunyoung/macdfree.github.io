@@ -3,7 +3,6 @@ layout: default
 ---
 
 <div>
-    {{ page.title }}
     <a href="{{ site.baseurl }}/language.html" {% if page.title == 'language' %}{{'class="selected"'}}{% endif %} ><h4>编程语言</h4></a>
     <ul>
         {% for post in site.categories.language %}
