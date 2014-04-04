@@ -283,3 +283,73 @@ table tr:nth-child(2n) {
 img {
   max-width: 100%
 }
+
+
+/* custom
+=============================================================================*/
+#header>a {
+    font-size: 3em;
+    font-weight: bold;
+}
+#header>p {
+    font-style: italic;
+    padding: 0 9px;
+    margin: 0 0 30px 0;
+}
+#header {
+    border-bottom: 1px solid #eee;
+}
+#footer {
+    text-align: center;
+    padding: 15px 0;
+}
+#post-list>li {
+    margin: 10px 0;
+}
+#body {
+    background-color: #fff;
+    padding: 5px 25px;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+#main, #post {
+    border-bottom: 1px solid #eee;
+}
+#post-meta {
+    list-style-type: none;
+    padding: 0;
+}
+#post-meta li {
+    float: left;
+    padding-right: 30px;
+    margin-bottom: 15px;
+}
+#post-meta:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#post-list a {
+    padding: 2px 4px;
+}
+p.p-hide {
+    display: none;
+}
+#content img {
+    display: block;
+    margin: 0 auto;
+}
+#main>h1,#post>h1 {
+    border-left: 12px solid #4183BE;
+    padding: 4px 15px;
+    background-color: #f9f9f9;
+}
+
+#left-menu {
+    
+}
+#right-content {}
+#right-content:after {
+    content: '';
+    display: block;
+    clear: both;
+}
