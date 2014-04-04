@@ -345,9 +345,14 @@ p.p-hide {
 }
 
 #left-menu {
-    
+    float: left;
+    padding: 4px 4px 0 0;
+    border-right: 1px solid #eee;
 }
-#right-content {}
+#right-content {
+    float: left;
+    padding: 4px 0 0 4px;
+}
 #right-content:after {
     content: '';
     display: block;
