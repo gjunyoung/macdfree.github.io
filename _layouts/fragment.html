@@ -3,32 +3,32 @@ layout: default
 ---
 
 <div id="left-menu">
-    <h3><a href="{{ site.baseurl }}/language.html" {% if page.title == 'language' %}{{'class="selected"'}}{% endif %} >编程语言</a></h3>
-    <ul>
+    <h4><a href="{{ site.baseurl }}/language.html" {% if page.title == 'language' %}{{'class="selected"'}}{% endif %} >编程语言</a></h4>
+    <ul class="list-menu">
         {% for post in site.categories.language %}
         <li><a href="">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
-    <h3><a href="{{ site.baseurl }}/system.html" {% if page.title == 'system' %}{{'class="selected"'}}{% endif %} >操作系统</a></h3>
-    <ul>
+    <h4><a href="{{ site.baseurl }}/system.html" {% if page.title == 'system' %}{{'class="selected"'}}{% endif %} >操作系统</a></h4>
+    <ul class="list-menu">
         {% for post in site.categories.system %}
         <li><a href="">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
     <h4><a href="{{ site.baseurl }}/hardware.html" {% if page.title == 'hardware' %}{{'class="selected"'}}{% endif %} >硬件</a></h4>
-    <ul>
+    <ul class="list-menu">
         {% for post in site.categories.hardware %}
         <li><a href="">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
     <h4><a href="{{ site.baseurl }}/tool.html" {% if page.title == 'tool' %}{{'class="selected"'}}{% endif %} >工具</a></h4>
-    <ul>
+    <ul class="list-menu">
         {% for post in site.categories.tool %}
         <li><a href="">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
     <h4><a href="{{ site.baseurl }}/other.html" {% if page.title == 'other' %}{{'class="selected"'}}{% endif %} >其他</a></h4>
-    <ul>
+    <ul class="list-menu">
         {% for post in site.categories.other %}
         <li><a href="">{{ post.title }}</a></li>
         {% endfor %}
