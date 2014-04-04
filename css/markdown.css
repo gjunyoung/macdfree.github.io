@@ -346,12 +346,12 @@ p.p-hide {
 
 #left-menu {
     float: left;
-    padding: 4px 4px 0 0;
     border-right: 1px solid #eee;
+    width: 130px;
 }
 #right-content {
     float: left;
-    padding: 4px 0 0 4px;
+    padding: 0 0 0 20px;
 }
 #footer:before {
     content: '';
