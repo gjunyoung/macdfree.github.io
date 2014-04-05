@@ -355,9 +355,13 @@ p.p-hide {
 }
 #left-menu>h4 {
     margin-bottom: 0;
+    padding-left: 6px;
 }
 .list-menu {
     list-style-type: none;
     margin: 2px 0;
     font-size: 17px;
+}
+.selected {
+    border-left: 4px solid #aaa;
 }
