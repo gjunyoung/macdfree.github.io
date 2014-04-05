@@ -5,7 +5,7 @@ title: other
 
 {% for post in site.categories.other %}
 <div>
-    <h3>{{ post.title }}</h3>
+    <h3>{{ post.title }}<a id="other-{{forloop.index}}"></a></h3>
     {{ post.content }}
 </div>
 {% endfor %}
