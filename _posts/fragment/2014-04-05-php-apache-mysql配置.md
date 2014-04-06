@@ -4,7 +4,8 @@ category: other
 ---
 
 httpd.conf:
-```
+
+{% highlight %}
 LoadModule php5_module "F:/software/apm/php54/php5apache2_2.dll"
 AddType application/x-httpd-php .php
 PHPIniDir "F:/software/apm/php54"
@@ -12,10 +13,11 @@ PHPIniDir "F:/software/apm/php54"
 Include conf/extra/httpd-vhosts.conf
 DocumentRoot "F:/PhpProject/cars"
 <Directory "F:/PhpProject/cars">
-```
+{% endhighlight %}
 
 httpd-vhosts.conf:
-```
+
+{% highlight %}
 <VirtualHost *:80>
     ServerAdmin webmaster@dummy-host.macd.com
     DocumentRoot "E:/PhpProject/cars"
@@ -24,11 +26,12 @@ httpd-vhosts.conf:
     ErrorLog "logs/cars-error.log"
     CustomLog "logs/cars-access.log" common
 </VirtualHost>
-```
+{% endhighlight %}
 
 php.ini:
-```
+
+{% highlight %}
 extension=php_mysql.dll
 extension=php_mysqli.dll
 extension_dir = "F:/software/apm/php54/ext"
-```
+{% endhighlight %}
