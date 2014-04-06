@@ -370,9 +370,10 @@ p.p-hide {
 .selected {
     border-left: 4px solid #aaa;
 }
-#fragment {
+a#fragment {
     position: absolute;
-    top: 0px;
+    top: 12px;
     right: 0px;
     font-size: 16px;
+    display: block;
 }
