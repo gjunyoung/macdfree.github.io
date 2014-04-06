@@ -355,6 +355,7 @@ p.p-hide {
 #right-content>div {
     padding-left: 10px;
     border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
 }
 #left-menu>h4 {
     margin-bottom: 0;
