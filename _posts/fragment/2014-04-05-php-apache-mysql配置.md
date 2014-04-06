@@ -5,7 +5,7 @@ category: other
 
 httpd.conf:
 
-{% highlight %}
+{% highlight conf %}
 LoadModule php5_module "F:/software/apm/php54/php5apache2_2.dll"
 AddType application/x-httpd-php .php
 PHPIniDir "F:/software/apm/php54"
@@ -17,7 +17,7 @@ DocumentRoot "F:/PhpProject/cars"
 
 httpd-vhosts.conf:
 
-{% highlight %}
+{% highlight conf %}
 <VirtualHost *:80>
     ServerAdmin webmaster@dummy-host.macd.com
     DocumentRoot "E:/PhpProject/cars"
@@ -30,7 +30,7 @@ httpd-vhosts.conf:
 
 php.ini:
 
-{% highlight %}
+{% highlight conf %}
 extension=php_mysql.dll
 extension=php_mysqli.dll
 extension_dir = "F:/software/apm/php54/ext"
