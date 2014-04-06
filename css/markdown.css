@@ -346,12 +346,15 @@ p.p-hide {
 
 #left-menu {
     float: left;
-    border-right: 1px solid #eee;
-    width: 130px;
+    width: 25%;
 }
 #right-content {
     float: left;
-    padding: 0 0 0 20px;
+    width: 75%;
+}
+#right-content>div {
+    padding-left: 10px;
+    border-bottom: 1px solid #eee;
 }
 #left-menu>h4 {
     margin-bottom: 0;
