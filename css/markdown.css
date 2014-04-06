@@ -298,6 +298,7 @@ img {
 }
 #header {
     border-bottom: 1px solid #eee;
+    position: relative;
 }
 #footer {
     text-align: center;
@@ -368,4 +369,9 @@ p.p-hide {
 }
 .selected {
     border-left: 4px solid #aaa;
+}
+#fragment {
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
