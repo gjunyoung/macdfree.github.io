@@ -321,7 +321,7 @@ img {
 }
 #post-meta li {
     float: left;
-    padding-right: 30px;
+    padding-right: 10px;
     margin-bottom: 15px;
 }
 #post-meta:after {
