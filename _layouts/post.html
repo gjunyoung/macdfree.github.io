@@ -8,6 +8,7 @@ layout: default
     <ul id="post-meta">
         <li>时间：{{page.date | date: "%Y-%m-%d"}}</li>
         {% if page.tags %}<li>标签：{{ page.tags|array_to_sentence_string }}</li>{% endif %}
+        {% if page.author %}<li>作者：{{ page.author }}</li>{% endif %}
     </ul>
     <div id="content">
         {{ content }}
