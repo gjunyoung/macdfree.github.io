@@ -3,34 +3,34 @@ layout: default
 ---
 
 <div id="left-menu">
-    <h4 {% if page.title == 'language' %}{{'class="selected"'}}{% endif %} ><a href="{{ site.baseurl }}/language.html" >编程语言</a></h4>
+    <h4 {% if page.title == 'language' %}{{'class="selected"'}}{% endif %} ><a href="{{ site.baseurl }}/language/" >编程语言</a></h4>
     <ul class="list-menu">
         {% for post in site.categories.language %}
-        <li><a href="#language-{{ forloop.index }}">{{ post.title }}</a></li>
+        <li><a href="{{ site.baseurl }}/language/#language-{{ forloop.index }}">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
-    <h4 {% if page.title == 'system' %}{{'class="selected"'}}{% endif %}><a href="{{ site.baseurl }}/system.html" >操作系统</a></h4>
+    <h4 {% if page.title == 'system' %}{{'class="selected"'}}{% endif %}><a href="{{ site.baseurl }}/system/" >操作系统</a></h4>
     <ul class="list-menu">
         {% for post in site.categories.system %}
-        <li><a href="#system-{{ forloop.index }}">{{ post.title }}</a></li>
+        <li><a href="{{ site.baseurl }}/system/#system-{{ forloop.index }}">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
-    <h4 {% if page.title == 'hardware' %}{{'class="selected"'}}{% endif %}><a href="{{ site.baseurl }}/hardware.html">硬件</a></h4>
+    <h4 {% if page.title == 'hardware' %}{{'class="selected"'}}{% endif %}><a href="{{ site.baseurl }}/hardware/">硬件</a></h4>
     <ul class="list-menu">
         {% for post in site.categories.hardware %}
-        <li><a href="#hardware-{{ forloop.index }}">{{ post.title }}</a></li>
+        <li><a href="{{ site.baseurl }}/hardware/#hardware-{{ forloop.index }}">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
-    <h4 {% if page.title == 'tool' %}{{'class="selected"'}}{% endif %}><a href="{{ site.baseurl }}/tool.html">工具</a></h4>
+    <h4 {% if page.title == 'tool' %}{{'class="selected"'}}{% endif %}><a href="{{ site.baseurl }}/tool/">工具</a></h4>
     <ul class="list-menu">
         {% for post in site.categories.tool %}
-        <li><a href="#tool-{{ forloop.index }}">{{ post.title }}</a></li>
+        <li><a href="{{ site.baseurl }}/tool/#tool-{{ forloop.index }}">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
-    <h4 {% if page.title == 'other' %}{{'class="selected"'}}{% endif %}><a href="{{ site.baseurl }}/other.html">其他</a></h4>
+    <h4 {% if page.title == 'other' %}{{'class="selected"'}}{% endif %}><a href="{{ site.baseurl }}/other/">其他</a></h4>
     <ul class="list-menu">
         {% for post in site.categories.other %}
-        <li><a href="#other-{{ forloop.index }}">{{ post.title }}</a></li>
+        <li><a href="{{ site.baseurl }}/other/#other-{{ forloop.index }}">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
 </div>
