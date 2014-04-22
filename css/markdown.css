@@ -371,6 +371,8 @@ p.p-hide {
 }
 .list-menu>li {
     margin:5px 0;
+}
+.list-menu>li>a:hover {
     border-bottom: 1px dashed #4183C4;
 }
 .selected {
