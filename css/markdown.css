@@ -288,14 +288,14 @@ img {
 /* custom
 =============================================================================*/
 #header>a {
-    font-size: 28px;
+    font-size: 48px;
     font-weight: bold;
 }
 #header>p {
     font-style: italic;
     padding: 0 9px;
     margin: 0 0 30px 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 #header {
     border-bottom: 1px solid #eee;
