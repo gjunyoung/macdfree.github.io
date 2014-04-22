@@ -349,11 +349,11 @@ p.p-hide {
 
 #left-menu {
     float: left;
-    width: 25%;
+    width: 20%;
 }
 #right-content {
     float: left;
-    width: 75%;
+    width: 80%;
 }
 #right-content>div {
     padding-left: 10px;
@@ -370,7 +370,8 @@ p.p-hide {
     font-size: 14px;
 }
 .list-menu>li {
-    margin:4px 0;
+    margin:5px 0;
+    border-bottom: 1px dashed #4183C4;
 }
 .selected {
     border-left: 4px solid #aaa;
