@@ -367,7 +367,10 @@ p.p-hide {
 .list-menu {
     list-style-type: none;
     margin: 2px 0;
-    font-size: 17px;
+    font-size: 14px;
+}
+.list-menu>li {
+    margin:4px 0;
 }
 .selected {
     border-left: 4px solid #aaa;
