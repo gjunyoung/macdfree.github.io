@@ -385,3 +385,9 @@ a#fragment {
     font-size: 16px;
     display: block;
 }
+#comment-a {
+    display: block;
+    width:40px;
+    padding: 10px;
+    margin: 0 auto;
+}
