@@ -1,30 +1,10 @@
 ---
 layout: default
 ---
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-<div id="post">
-    <h1>{{page.title}}</h1>
-    <ul id="post-meta">
-        <li>时间：{{page.date | date: "%Y-%m-%d"}}</li>
-        {% if page.tags %}<li>标签：{{ page.tags|array_to_sentence_string }}</li>{% endif %}
-        {% if page.author %}<li>作者：{{ page.author }}</li>{% endif %}
-    </ul>
-    <div id="content">
-        {{ content }}
-    </div>
-    <a href="javascript:void(0)" onclick="test()" id="comment-a">查看评论</a>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'littleattic'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        function test() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        }
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<h1>{{page.title}}</h1>
+<span class="glyphicon glyphicon-calendar"></span><span class="small">{{page.date | date: "%Y-%m-%d"}}</span>
+<div id="content">
+  {{ content }}
 </div>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>

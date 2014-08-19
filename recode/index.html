@@ -1,9 +1,9 @@
 ---
 layout: default
-title: LittleAttic
+title: recode|LittleAttic
 ---
 
-{% for post in site.related_posts %}
+{% for post in site.categories.recode %}
   <div class="title">
     <h3><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></h4>
     <span class="glyphicon glyphicon-calendar"></span><span class="small">{{ post.date | date: "%Y-%m-%d" }}</span>
