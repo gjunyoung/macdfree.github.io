@@ -15,7 +15,7 @@ layout: default
     {% for post in posts %}
       {% for cc in post.categories %}
         {{ cc }}?{{ cate }}
-        {% if cc==cate %}
+        {% if cc == cate %}
           {{ post.url }}
         {% endif %}
       {% endfor %}
