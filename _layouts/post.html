@@ -11,10 +11,10 @@ layout: default
 
 {% for category in site.categories %}
   {% capture cate %}{{ category | first }}{% endcapture %}
-  {{ cate }}
   {% for posts in category %}
     {% for post in posts %}
       {% for cc in post.categories %}
+        {{ cc }}?{{ cate }}
         {% if cc==cate %}
           {{ post.url }}
         {% endif %}
