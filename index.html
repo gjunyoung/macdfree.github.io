@@ -24,4 +24,9 @@ title: LittleAttic
   </li>
 {% endfor %}
 </ul>
-{{ site.categories }}
+
+<ul>
+{% for category in site.categories %}
+  {{ category }}
+{% endfor %}
+</ul>
