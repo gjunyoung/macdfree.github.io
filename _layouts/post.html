@@ -9,12 +9,11 @@ layout: default
 </div>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
-{% for category in site.categories %}
+{% for category in site.tags %}
   {% capture cate %}{{ category | first }}{% endcapture %}
   {% for posts in category %}
     {% for post in posts %}
-      {% for cc in page.categories %}
-        {{ cc }}
+      {% for cc in page.tags %}
         {% if cc == cate %}
           {{ post.url }}
         {% endif %}
