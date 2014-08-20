@@ -11,6 +11,7 @@ title: LittleAttic
   </div>
 {% endfor %}
 
+<ul>
 {% for category in site.categories %}
   <li><a name="{{ category | first }}">{{ category | first }}</a>
     <ul>
@@ -22,3 +23,4 @@ title: LittleAttic
     </ul>
   </li>
 {% endfor %}
+</ul>
