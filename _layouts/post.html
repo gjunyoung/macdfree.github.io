@@ -13,8 +13,8 @@ layout: default
   {% capture cate %}{{ category | first }}{% endcapture %}
   {% for posts in category %}
     {% for post in posts %}
-      {% for cc in post.categories %}
-        {{ cc }}?{{ cate }}
+      {% for cc in page.categories %}
+        {{ cc }}
         {% if cc == cate %}
           {{ post.url }}
         {% endif %}
