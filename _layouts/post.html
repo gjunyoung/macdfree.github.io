@@ -8,3 +8,16 @@ layout: default
   {{ content }}
 </div>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+{% for category in site.categories %}
+  {% capture cate %}{{ category | first }}{% endcapture %}
+  {% for posts in category %}
+    {% for post in posts %}
+      {% for cc in post.categories %}
+        {% if cc==cate %}
+          {{ post.url }}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+   {% endfor %}
+{% endfor %}
