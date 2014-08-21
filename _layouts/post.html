@@ -28,11 +28,9 @@ layout: default
           {% capture cate %}{{ category | first }}{% endcapture %}
           {% for posts in category %}
             {% for post in posts %}
-              {% for cc in page.tags %}
-                {% if cc == cate %}
+                {% if tag == cate %}
                   <span>{{page.date | date: "%Y-%m-%d"}}<a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></span><br />
                 {% endif %}
-              {% endfor %}
             {% endfor %}
           {% endfor %}
         {% endfor %}
