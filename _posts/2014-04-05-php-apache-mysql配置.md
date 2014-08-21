@@ -2,6 +2,7 @@
 title: php apache mysql配置
 layout: post
 category: note
+tags: [apache,配置]
 desc: php apache mysql配置
 ---
 
