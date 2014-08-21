@@ -29,7 +29,7 @@ layout: default
           {% if tag == cate %}
             {% for posts in category %}
               {% for post in posts %} 
-                <span>{{page.date | date: "%Y-%m-%d"}}<a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></span><br />
+                <span>{{post.date | date: "%Y-%m-%d"}}<a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></span><br />
               {% endfor %}
             {% endfor %}
           {% endif %}
