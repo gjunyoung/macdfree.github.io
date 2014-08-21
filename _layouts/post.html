@@ -4,10 +4,10 @@ layout: default
 
 <h1>{{page.title}}</h1>
 <span class="glyphicon glyphicon-calendar"></span><span class="small">{{page.date | date: "%Y-%m-%d"}}</span>
-<span class="glyphicon glypyicon-tags"></span>
+<span class="glyphicon glyphicon-tags"></span>
 <span class="small">
   {% for cc in page.tags %}
-    <a data-toggle="modal" href="#{{ cc }}">{{ cc }}</a>,
+    <a data-toggle="modal" href="#{{ cc }}">{{ cc }}</a>, 
   {% endfor %}
 </span>
 <div id="content">
@@ -21,7 +21,7 @@ layout: default
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">{{ cc }}</h4>
+        <h4 class="modal-title" id="myModalLabel">{{ tag }}</h4>
       </div>
       <div class="modal-body">
         {% for category in site.tags %}
@@ -30,7 +30,7 @@ layout: default
             {% for post in posts %}
               {% for cc in page.tags %}
                 {% if cc == cate %}
-                  <span>{{page.date | date: "%Y-%m-%d"}}<a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></span>
+                  <span>{{page.date | date: "%Y-%m-%d"}}<a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></span><br />
                 {% endif %}
               {% endfor %}
             {% endfor %}
