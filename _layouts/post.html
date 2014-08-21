@@ -26,13 +26,13 @@ layout: default
       <div class="modal-body">
         {% for category in site.tags %}
           {% capture cate %}{{ category | first }}{% endcapture %}
-          {% for posts in category %}
-            {% for post in posts %}
-                {% if tag == cate %}
-                  <span>{{page.date | date: "%Y-%m-%d"}}<a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></span><br />
-                {% endif %}
+          {% if tag == cate %}
+            {% for posts in category %}
+              {% for post in posts %} 
+                <span>{{page.date | date: "%Y-%m-%d"}}<a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></span><br />
+              {% endfor %}
             {% endfor %}
-          {% endfor %}
+          {% endif %}
         {% endfor %}
       </div>
     </div>
